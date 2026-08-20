@@ -1,0 +1,9 @@
+# Keep local Copilot instructions out of source control.
+/.github/
+/.playwright-mcp/
+
+# Exclude local dependencies and generated build output.
+**/node_modules/
+**/.validation-dist/
+**/dist/
+*.log

@@ -1,0 +1,69 @@
+/* ============ Print / PDF export — 16:9 one slide per page ============ */
+@media print {
+  @page {
+    size: 10in 5.625in landscape;
+    margin: 0;
+  }
+
+  html, body {
+    width: auto;
+    height: auto;
+    overflow: visible;
+    background: #fff;
+  }
+
+  /* Hide all chrome */
+  .top-controls,
+  .nav-arrow,
+  #admin-overlay,
+  #admin-panel,
+  .speaker-notes-overlay,
+  #slide-counter,
+  #section-label {
+    display: none !important;
+  }
+
+  #stage {
+    position: static;
+    inset: auto;
+    display: block;
+    background: #fff;
+    bottom: 0 !important;
+  }
+
+  #slide-scaler {
+    position: static;
+    transform: none !important;
+    width: 10in;
+    height: 5.625in;
+    overflow: visible;
+  }
+
+  #slide-container { position: static; width: 10in; height: 5.625in; }
+
+  .slide {
+    display: flex !important;
+    position: relative;
+    inset: auto;
+    width: 10in;
+    height: 5.625in;
+    page-break-after: always;
+    break-after: page;
+    overflow: hidden;
+  }
+
+  /* Print-only visibility overrides applied by JS before print */
+  .slide.print-hidden { display: none !important; }
+
+  .slide-bg { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+  /* Keep the 1920x1080 content scaled into the print page */
+  .slide-content {
+    transform: scale(calc(960 / 1920));
+    transform-origin: top left;
+    width: 1920px;
+    height: 1080px;
+  }
+}
+
+* { -webkit-print-color-adjust: exact; print-color-adjust: exact; }

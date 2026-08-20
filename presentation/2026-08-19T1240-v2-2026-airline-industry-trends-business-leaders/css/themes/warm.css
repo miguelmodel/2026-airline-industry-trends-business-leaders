@@ -1,0 +1,15 @@
+/* Warm theme */
+[data-theme="warm"] {
+  --bg-primary: #faf6f1;
+  --bg-secondary: #f0e9df;
+  --bg-card: rgba(0, 0, 0, 0.03);
+  --border-card: rgba(0, 0, 0, 0.08);
+  --text-primary: #2d2a26;
+  --text-secondary: #5f574e;      /* 6.59:1 on bg, 6.15:1 on cards (was 4.36:1) */
+  --accent-primary: #9a5713;      /* 5.21:1 on bg, 4.86:1 on cards (was 3.16:1) */
+  --accent-secondary: #6d4423;    /* 7.80:1 on bg (was low-contrast tan) */
+  --gradient-title: linear-gradient(135deg, #9a5713 0%, #6d4423 100%);
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}

@@ -1,0 +1,16 @@
+/* GitHub Cosmos — initial theme */
+:root,
+[data-theme="github-cosmos"] {
+  --bg-primary: #0d1117;
+  --bg-secondary: #161b22;
+  --bg-card: rgba(255, 255, 255, 0.03);
+  --border-card: rgba(255, 255, 255, 0.20);
+  --text-primary: #e6edf3;
+  --text-secondary: rgba(230, 237, 243, 0.75);
+  --accent-primary: #58a6ff;
+  --accent-secondary: #bc8cff;
+  --gradient-title: linear-gradient(135deg, #58a6ff 0%, #bc8cff 100%);
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
