@@ -1,5 +1,5 @@
 ---
-brief_version: 4
+brief_version: 5
 topic: "2026 Airline Industry Trends: What Business Leaders Need to Know"
 topic_slug: "2026-airline-industry-trends-business-leaders"
 audience: "Airline C-suite and senior leaders across strategy, finance, commercial, operations, and technology"
@@ -30,7 +30,7 @@ decisions:
   - "Require the slide builder to implement each slide's approved visual guidance with a relevant visual, not a text-only substitute."
   - "End with one audience-facing summary slide of the key insights; do not end with discussion questions."
   - "Keep all visible slide content audience-facing; presenter instructions, timing cues, and internal production comments may appear only in hidden speaker notes or build metadata."
-  - "Keep the presentation local; do not publish it."
+  - "Publish the approved v3 presentation in the public GitHub repository miguelmodel/2026-airline-industry-trends-business-leaders using GitHub Pages."
   - "Use GitHub Cosmos as the initial theme while retaining all four switchable themes."
   - "Use data-first executive visuals with selective sourced aviation imagery only when the image materially advances the slide's key idea."
   - "Use high-contrast, color-independent encoding, readable typography, descriptive alt text, and reduced-motion-compatible behavior."
@@ -104,7 +104,8 @@ language. Clearly label observed results, estimates, and forecasts.
   described without attributing them to a geopolitical event or actor.
 - Do not include executive recommendations, calls to action, decision
   frameworks, priorities, or next-step proposals.
-- The primary output is an interactive local web presentation.
+- The primary output is an interactive web presentation with local preview and
+  a public GitHub Pages deployment.
 
 # Banned terms
 
@@ -279,7 +280,8 @@ are acceptable.
 
 # Visual preferences
 
-- Deliver as an interactive local presentation.
+- Deliver as an interactive presentation that works locally and from the
+  approved GitHub Pages repository base path.
 - Use GitHub Cosmos as the initial theme. Retain Warm, Corporate, and Cyberpunk
   as switchable alternatives without weakening visual fidelity or contrast.
 - Use a data-first executive visual language: charts, comparisons, quantitative

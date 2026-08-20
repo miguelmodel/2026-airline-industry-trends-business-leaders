@@ -1,7 +1,7 @@
 ---
 orchestrator_version: "1.0"
 started_at: "2026-08-19T02:26:12.024Z"
-last_updated: "2026-08-20T09:35:34.970Z"
+last_updated: "2026-08-20T09:46:27.455Z"
 current_phase: "done"
 current_gate: "complete"
 review_cycle:
@@ -32,7 +32,21 @@ review_cycle:
 
 - None. Gates 3 and 4 are preapproved. Initial theme is GitHub Cosmos,
   visual direction is data-first with selective sourced aviation imagery, and
-  delivery remains local-only.
+  the approved v3 build is published after explicit user opt-in.
+
+## Publication
+
+- Public repository:
+  `https://github.com/miguelmodel/2026-airline-industry-trends-business-leaders`
+- Repository visibility: public.
+- Main source branch: `main`; initial workspace commit `faae70e`.
+- GitHub Pages source: `gh-pages` branch, path `/`; publication commit
+  `aee3cc1`.
+- Live presentation:
+  `https://miguelmodel.github.io/2026-airline-industry-trends-business-leaders/`
+- Published build:
+  `presentation/2026-08-19T1935-v3-2026-airline-industry-trends-business-leaders/`
+  with Pages base `/2026-airline-industry-trends-business-leaders/`.
 
 ## Revision log
 
@@ -263,6 +277,17 @@ review_cycle:
   the entire workspace except `.github/`; local dependencies and generated
   `dist/` directories remain ignored. Pre-publication filename, token-pattern,
   and large-file scans found no candidate secrets or files over 50 MB.
+- `2026-08-20T09:46:27.455Z` - Created the public GitHub repository and pushed
+  the requested workspace scope to `main` at commit `faae70e`. `.github/`,
+  `.playwright-mcp/`, `node_modules/`, validation output, and generated `dist/`
+  remain ignored.
+- `2026-08-20T09:46:27.455Z` - Built approved v3 with exact Pages base
+  `/2026-airline-industry-trends-business-leaders/`, created `dist/.nojekyll`,
+  and published the exact 18-file output to `gh-pages` at commit `aee3cc1`.
+- `2026-08-20T09:46:27.455Z` - GitHub Pages reached `built` with HTTPS enforced.
+  Verified HTTP 200 and `#slide-container` at the live URL, 14 loaded slides,
+  working next-slide navigation, all 14 slide requests returning 200, and zero
+  browser console errors.
 
 ## Sanitized infrastructure blockers
 
